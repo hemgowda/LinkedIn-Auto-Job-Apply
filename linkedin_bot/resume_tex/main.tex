@@ -1,0 +1,266 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\usepackage[left=0.5in,right=0.5in,top=0.3in,bottom=0.3in]{geometry} % Reduced margins
+\usepackage{ragged2e} % For justify environment
+\usepackage{tikz} % For custom tags
+
+% Define custom commands for CV tags and sections
+\newcommand{\cvsection}[1]{\textbf{#1}}
+\newcommand{\cvtag}[1]{\tikz[baseline=(char.base)]{\node[draw,rounded corners=3pt,inner sep=2pt,fill=gray!10] (char) {#1};}}
+\newcommand{\divider}{\vspace{0.3em}\hrule\vspace{0.3em}}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{center}{\Large\textbf{Hemanth Kumar J N}}\end{center}
+
+\begin{center}
+Bengaluru 560010, India \textbar{} hemanthgunduraj77@gmail.com
+\textbar{} +91-6361613890 \textbar{}
+\href{https://github.com/hemgowda}{\ul{GitHub}} \textbar{}
+\href{https://linkedin.com/in/Hemanthakumar}{\ul{LinkedIn}}
+\end{center}
+
+\begin{center}\textbf{Summary}\end{center}
+\vspace{-0.5em}
+
+Backend \& Data Engineer with 4+ years of experience building LLM-powered
+data platforms, ETL pipelines, and multi-cloud infrastructure across AWS
+and GCP in the healthcare domain. Skilled in Snowflake, BigQuery, Python
+backend services, and ML/GenAI pipelines. M.S. in Data Science with hands-on expertise in DevOps automation, CI/CD, and scalable
+cloud-native architectures.
+\vspace{-1.2em}
+
+\begin{center}\cvsection{Skills}\end{center}
+\vspace{-0.5em}
+
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{Core Expertise}
+\vspace{0.21em}
+
+\textbf{Programming : }\cvtag{Python} \cvtag{SQL} \cvtag{PySpark} \cvtag{Data-Structures}
+\vspace{0.09em}
+
+\textbf{Backend \& Systems:}\cvtag{REST APIs} \cvtag{Distributed Systems}           \cvtag{Microservices}  \cvtag{System Design}  \cvtag{Event - Driven Architecture} 
+\vspace{0.1em}
+
+\textbf{Cloud Engineering :} \cvtag{AWS} \cvtag{GCP} \cvtag{Snowflake}  \cvtag{ETL/ELT} 
+\vspace{0.1em}
+
+\textbf{GenAI \& ML:}\cvtag{LLM} \cvtag{RAG } \cvtag{Vertex AI} \cvtag{Model Deployment } 
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{Tools \& Technologies}
+\vspace{0.2em}
+
+\textbf{Databases :} \cvtag{MySQL} \cvtag{MongoDB} \cvtag{BigQuery} 
+\cvtag{Teradata}
+\vspace{0.2em}
+
+\textbf{DevOps \& Streaming:} \cvtag{Git} \cvtag{Docker} \cvtag{K8S} \cvtag{CI/CD} \cvtag{Jenkins} \cvtag{Terraform} \cvtag{CloudFormation} \cvtag{SQS} \cvtag{SNS} \cvtag{Linux}\vspace{0.2em}
+
+\textbf{Data Science \& Analytics:} \cvtag{Scalable ML Pipelines} \cvtag{Data Modeling} \cvtag{Feature Engineering} \cvtag{Statistical Analysis} 
+\end{minipage}
+\vspace{-0.1em}
+
+\begin{center}\textbf{Experience}\end{center}
+\vspace{-0.7em}
+
+\textbf{Carelon Global Solutions Private Limited} \hfill Jun 2022 -- Present
+
+\emph{\textbf{Software Engineer III -- Cloud Data Engineering}}
+\emph{Bengaluru, India}
+
+\begin{itemize}
+\item
+  Architected Python backend pipelines integrating RDS and Snowflake
+  metadata for job health analytics, and integrated LLM endpoints with
+  retrieval and embedding workflows to power a natural-language chatbot
+  -- reducing ad-hoc analyst requests by \textasciitilde60\%.
+\item
+  Built an ETL pipelines using SQL and Python with
+  partitioning and clustering in Snowflake and RDS, improving query
+  performance by 30--40\%; deployed Flask-based REST APIs on AWS EC2
+  with auto-scaling achieving 99.9\% uptime.
+\item
+  Engineered a YAML-based automation framework cutting 80\% of manual
+  operational work, and built a Python SQL-generation tool (COT, DDL,
+  Falcon SQL) enabling creation of 1,000+ tables across Snowflake --
+  recognized with Carelon PLT Appreciation Award.
+\item
+  Automated CI/CD deployments via AWS pipelines with CloudWatch
+  monitoring; Dockerized services for scalable deployments and enforced
+  data governance through centralized health and usage metadata
+  tracking.
+\item
+  Designed and exposed LLM-based monitoring dashboards via Flask REST
+  APIs, integrating governance rules and job-failure alerts with
+  BigQuery and Snowflake metadata -- enabling stakeholders to query
+  pipeline status in real time.
+\end{itemize}
+\vspace{-0.2em}
+
+\begin{center}\textbf{Projects}\end{center}
+\vspace{-0.5em}
+
+\textbf{Data Health LLM Chatbot \& Analytics Platform} \hfill \emph{jun 2022 -- Present}
+\vspace{-0.5em}
+
+\emph{Python \textbar{} Pandas \textbar{} RDS \textbar{} BigQuery
+\textbar{} Snowflake \textbar{} SQL \textbar{} LLM \textbar{} Embeddings
+\textbar{} Flask}
+
+\begin{itemize}
+\item
+  Built Python backend pipelines extracting metadata from RDS and
+  BigQuery into consolidated monitoring tables; integrated LLM-based
+  chatbot with retrieval and embedding workflows to answer natural
+  language queries, cutting manual monitoring effort by
+  \textasciitilde60\%.
+\item
+  Centralized data governance and table health/usage insights, enabling
+  proactive alerting on pipeline failures and improving platform
+  reliability.
+\end{itemize}
+
+%\textbf{ML \& Data Engineering with Vertex AI -- Healthcare Fraud Detection} \hfill %\emph{Mar 2022 -- Present}
+%
+%\emph{GCP \textbar{} Vertex AI \textbar{} BigQuery \textbar{} Cloud
+%Storage \textbar{} Dataflow \textbar{} Pub/Sub \textbar{} Looker Studio
+%\textbar{} XGBoost \textbar{} AutoML}
+%
+%\begin{itemize}
+%\item
+%  Designed an end-to-end 3-layer ML pipeline (Raw → Curated BigQuery →
+%  Vertex AI Serving) for Medicaid/Medicare fraud detection using
+%  XGBoost/AutoML; ingested streaming data via Pub/Sub and Dataflow
+%  (Apache Beam).
+%\item
+%  Delivered real-time Looker Studio dashboards for claims monitoring and
+%  enforced HIPAA compliance via IAM roles and VPC Service Controls.
+%\end{itemize}
+
+\textbf{Multi-Cloud Infrastructure Automation (AWS + GCP)} \hfill \emph{Mar 2024 -- Present}
+\vspace{-0.5em}
+
+\emph{AWS: EC2 \textbar{} VPC \textbar{} ELB \textbar{} WAF \textbar{}
+RDS \textbar{} CloudFormation \textbar{} GCP: Compute Engine \textbar{}
+Cloud SQL \textbar{} Terraform}
+
+\begin{itemize}
+\item
+  Designed a secure multi-cloud architecture (AWS VPC + GCP VPC peering)
+  with auto-scaling via EC2 Auto Scaling + GCP Instance Groups,
+  CloudFront + Cloud CDN for global caching, and infrastructure-as-code
+  using CloudFormation and Terraform for reproducible deployments.
+\item
+  Enhanced security posture by implementing AWS WAF and GCP Cloud Armor
+  for application-level threat protection; automated provisioning
+  ensured consistent, auditable environment configurations across dev,
+  staging, and production.
+\end{itemize}
+\vspace{-0.3em}
+
+\begin{center}\textbf{Education}\end{center}
+\vspace{-0.3em}
+
+\textbf{Manipal Academy of Higher Education, Bangalore} 2023 -- 2025
+
+\emph{M.S. in Data Science -- SGPA: 9.4}
+
+%\textbf{Jawaharlal Nehru National College of Engineering, Shivamogga}
+%2018 -- 2022
+%
+%\emph{B.E. in Information Science and Engineering -- CGPA: 8.1}
+\vspace{-0.9em}
+
+\begin{center}\cvsection{Certifications}\end{center}
+\vspace{-0.5em}
+
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{Google Certified Associate Cloud Engineer} -- Google
+\vspace{0.1em}
+
+\textbf{Machine Learning \& Data Science Capstone} -- IBM
+\vspace{0.1em}
+
+\textbf{Databases \& SQL for Data Science with Python} -- IBM
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{Building Statistical Models in R} -- Coursera
+\vspace{0.1em}
+
+\textbf{Object-Oriented Programming in Python} -- Infytq
+\vspace{0.1em}
+
+\textbf{Programming Fundamentals using Python} -- Infytq
+\end{minipage}
+
+\end{document}
